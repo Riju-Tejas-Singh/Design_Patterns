@@ -1,0 +1,15 @@
+# IntelliJ
+.idea/
+
+# Build output
+target/
+out/
+
+# Maven wrapper logs
+*.log
+
+# OS files
+.DS_Store
+
+# Compiled Java
+*.class
