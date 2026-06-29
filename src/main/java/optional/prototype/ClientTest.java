@@ -11,6 +11,7 @@ public class ClientTest {
         System.out.println(s1);
         System.out.println(s2);
 
+        // diff objs, shared variables (non-primitive & mutable)
         System.out.println(s1 == s2);
         s1.setId(2);
         s1.setName("Taj");
