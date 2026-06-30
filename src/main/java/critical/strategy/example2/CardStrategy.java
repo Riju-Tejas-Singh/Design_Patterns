@@ -1,4 +1,4 @@
-package critical.strategy;
+package critical.strategy.example2;
 
 public class CardStrategy implements PaymentStrategy {
     @Override
