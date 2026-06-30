@@ -1,9 +1,9 @@
 package critical.factory;
 
-public class PizzaClient {
+public class ClientTest {
     public static void main(String[] args) {
-        Pizza p = PizzaFactory.createPizza("Veg");
-        p.cut();
+        Pizza p1 = PizzaFactory.createPizza("Veg");
+        p1.cut();
         Pizza p2 = PizzaFactory.createPizza("Non Veg");
         p2.bake();
     }

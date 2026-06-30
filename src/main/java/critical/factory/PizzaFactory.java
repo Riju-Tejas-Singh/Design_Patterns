@@ -2,7 +2,6 @@ package critical.factory;
 
 public class PizzaFactory {
     public static Pizza createPizza(String type) {
-        Pizza pizza = null;
         switch (type) {
             case "Veg":
                 return new VegPizza();
