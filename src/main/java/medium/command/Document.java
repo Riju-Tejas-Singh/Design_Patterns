@@ -1,4 +1,4 @@
-package critical.command;
+package medium.command;
 
 /**
  * Command Receiver Class : receives commands via the command invoker (remote)

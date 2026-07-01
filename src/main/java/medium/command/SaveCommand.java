@@ -1,4 +1,4 @@
-package critical.command;
+package medium.command;
 
 public class SaveCommand implements Command {
     private Document document;

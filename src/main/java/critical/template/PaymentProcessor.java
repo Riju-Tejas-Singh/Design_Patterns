@@ -1,4 +1,4 @@
-package medium.template;
+package critical.template;
 
 abstract class PaymentProcessor {
 

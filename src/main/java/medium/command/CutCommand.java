@@ -1,4 +1,4 @@
-package critical.command;
+package medium.command;
 
 public class CutCommand implements Command {
     private final Document document;

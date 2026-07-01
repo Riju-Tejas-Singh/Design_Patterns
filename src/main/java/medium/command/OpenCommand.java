@@ -1,4 +1,4 @@
-package critical.command;
+package medium.command;
 
 public class OpenCommand implements Command {
     private final Document document;

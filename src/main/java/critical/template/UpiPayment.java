@@ -1,4 +1,4 @@
-package medium.template;
+package critical.template;
 
 public class UpiPayment extends PaymentProcessor{
     @Override

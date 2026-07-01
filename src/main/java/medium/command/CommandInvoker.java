@@ -1,4 +1,4 @@
-package critical.command;
+package medium.command;
 
 import java.util.ArrayList;
 import java.util.List;
