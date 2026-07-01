@@ -1,6 +1,7 @@
 package critical.observer.example1;
 
 /**
+ * Subject/Observable/Publisher class
  * Not used anywhere but good to map to interface
  */
 public interface Subject {

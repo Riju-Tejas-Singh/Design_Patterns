@@ -2,7 +2,7 @@ package high.state;
 
 public class ClientTest {
     public static void main(String[] args) {
-        VendingMachine machine = new VendingMachine();
+        VendingMachineContext machine = new VendingMachineContext();
         machine.selectProduct();
         machine.insertCoin();
         machine.selectProduct();

@@ -4,13 +4,13 @@ public class ClientTest {
 
     public static void main(String[] args) {
 
-        Vehicle passenger = new PassengerVehicle();
+        VehicleContext passenger = new PassengerVehicle();
         passenger.drive();
 
-        Vehicle sports = new SportsVehicle();
+        VehicleContext sports = new SportsVehicle();
         sports.drive();
 
-        Vehicle offRoad = new OffroadVehicle();
+        VehicleContext offRoad = new OffroadVehicle();
         offRoad.drive();
     }
 }

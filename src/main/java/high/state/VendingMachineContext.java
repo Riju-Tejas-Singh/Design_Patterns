@@ -3,9 +3,9 @@ package high.state;
 /**
  * Context Class Vending Machine
  */
-public class VendingMachine {
+public class VendingMachineContext {
     private State state;
-    public VendingMachine() {
+    public VendingMachineContext() {
         this.state = new IdleState();
     }
     public void setNextState(State state) {
