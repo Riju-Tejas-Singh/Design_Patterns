@@ -1,5 +1,8 @@
 package low.facade;
 
+/**
+ * Facade class to hide implementation details
+ */
 public class NetworkAccessFacade {
 
   private Comm comm = new Comm();
