@@ -1,4 +1,4 @@
-package critical.observer;
+package critical.observer.example1;
 
 public class ClientTest {
     public static void main(String[] args) {

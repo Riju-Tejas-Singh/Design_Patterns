@@ -1,4 +1,4 @@
-package critical.observer;
+package critical.observer.example1;
 
 import java.util.ArrayList;
 import java.util.List;
