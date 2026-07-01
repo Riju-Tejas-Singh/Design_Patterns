@@ -16,4 +16,16 @@ public class ClientTest {
         System.out.println("\n--- Redoing operations ---");
         invoker.redo();
     }
+    //    Opening document: file.txt
+    //    Pasting: Hello World
+    //    Saving document: file.txt
+    //    Content: Content of file.txtHello World
+    //
+    //--- Undoing operations ---
+    //    Undoing save: file.txt
+    //    Undo paste
+    //
+    //--- Redoing operations ---
+    //    Pasting: Hello World
+
 }

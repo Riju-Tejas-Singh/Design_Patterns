@@ -19,4 +19,9 @@ public class ClientTest {
         level1.handleRequest(req3);
         level1.handleRequest(req4);
     }
+
+    //    Level 1 Support handling: Simple issue
+    //    Level 2 Support handling: Complex issue
+    //    Level 3 Support handling: Critical issue
+    //    Request not handled: LEVEL4
 }
