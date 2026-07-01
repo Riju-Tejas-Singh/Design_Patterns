@@ -1,4 +1,4 @@
-package medium.prototype;
+package low.prototype;
 
 public class ClientTest {
 

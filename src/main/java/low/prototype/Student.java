@@ -1,4 +1,4 @@
-package medium.prototype;
+package low.prototype;
 
 /**
  * Shallow copy concept only holds meaning for mutable fields (meaningless for string)
