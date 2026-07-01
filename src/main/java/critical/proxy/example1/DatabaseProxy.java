@@ -1,5 +1,8 @@
 package critical.proxy.example1;
 
+/**
+ * Only admin can delete
+ */
 public class DatabaseProxy implements Database {
     private final DatabaseService databaseService;
     private final String role;

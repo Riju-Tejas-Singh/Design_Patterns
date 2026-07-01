@@ -1,5 +1,8 @@
 package critical.proxy.example2;
 
+/**
+ * Lazy loading image
+ */
 class ProxyImage implements Image {
     private final String filename;
     private RealImage realImage = null;
