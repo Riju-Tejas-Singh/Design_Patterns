@@ -27,4 +27,16 @@ public class SingletonTest {
         System.out.println(singletonBillPugh1);
         System.out.println(singletonBillPugh2);
     }
+    //    critical.singleton.SingletonEager@3cb5cdba
+    //    critical.singleton.SingletonEager@3cb5cdba
+    //    critical.singleton.SingletonStaticBlock@1134affc
+    //    critical.singleton.SingletonStaticBlock@1134affc
+    //    critical.singleton.SingletonLazy@129a8472
+    //    critical.singleton.SingletonLazy@129a8472
+    //    critical.singleton.SingletonThreadSafe@2f7c7260
+    //    critical.singleton.SingletonThreadSafe@2f7c7260
+    //    critical.singleton.SingletonDCL@6bdf28bb
+    //    critical.singleton.SingletonDCL@6bdf28bb
+    //    critical.singleton.SingletonBillPugh@e580929
+    //    critical.singleton.SingletonBillPugh@e580929
 }

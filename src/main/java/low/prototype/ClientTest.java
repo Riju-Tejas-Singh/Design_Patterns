@@ -18,5 +18,10 @@ public class ClientTest {
         System.out.println(s1);
         System.out.println(s2);
     }
+    //    Student{id=1, name='Raj'}
+    //    Student{id=1, name='Raj'}
+    //    false
+    //    Student{id=2, name='Taj'}
+    //    Student{id=1, name='Raj'}
 
 }

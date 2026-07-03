@@ -11,4 +11,11 @@ public class ClientTest {
 
         upi.processPayment();
     }
+    //    Validating
+    //    make card payment
+    //    Sending receipt
+    //----------------
+    //    Validating
+    //    make upi payment
+    //    Sending receipt
 }

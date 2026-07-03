@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Concrete Subject/Ovservable/Publisher class
  */
-public class WeatherStation implements Subject {
+public class WeatherStationSubject implements Subject {
 
     private final List<Observer> observers = new ArrayList<>();
     private String weather;

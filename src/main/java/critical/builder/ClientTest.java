@@ -7,9 +7,17 @@ public class ClientTest {
         User user = new User.Builder("Riju", "riju@gmail.com")
                 .age(24)
                 .profession("Software Engineer")
-                .salary(1500000)
+                .salary(500000)
                 .build();
 
         user.display();
     }
+    //    Very less salary
+    //    Name       : Riju
+    //    Email      : riju@gmail.com
+    //    Age        : 24
+    //    Phone      : Not Provided
+    //    Profession : Software Engineer
+    //    Married    : false
+    //    Salary     : 500000.0
 }

@@ -5,4 +5,5 @@ public class ClientTest {
         PaymentService paymentService = new PaymentService(new UpiStrategy());
         paymentService.makePayment(100);
     }
+    // pay 100 using upi
 }

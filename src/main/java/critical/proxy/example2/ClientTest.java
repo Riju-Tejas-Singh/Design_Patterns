@@ -10,4 +10,7 @@ public class ClientTest {
         // Image will not be loaded again, as it has been cached in the Proxy
         image.display();
     }
+    //    Loading image: example.jpg
+    //    Displaying image: example.jpg
+    //    Displaying image: example.jpg
 }

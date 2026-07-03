@@ -2,7 +2,7 @@ package critical.observer.example1;
 
 public class ClientTest {
     public static void main(String[] args) {
-        WeatherStation weatherStation = new WeatherStation();
+        WeatherStationSubject weatherStation = new WeatherStationSubject();
 
         Observer phoneDisplay = new PhoneDisplay();
         Observer tvDisplay = new TVDisplay();
@@ -13,7 +13,6 @@ public class ClientTest {
 
         // Simulating weather changes
         weatherStation.setWeather("Sunny");
-        weatherStation.setWeather("Rainy");
         weatherStation.setWeather("Cloudy");
 
         // Remove one observer
@@ -25,8 +24,6 @@ public class ClientTest {
 
     //    Phone Display:: updated weather: Sunny
     //    TV Display:: weather updated: Sunny
-    //    Phone Display:: updated weather: Rainy
-    //    TV Display:: weather updated: Rainy
     //    Phone Display:: updated weather: Cloudy
     //    TV Display:: weather updated: Cloudy
     //    Phone Display:: updated weather: Windy
