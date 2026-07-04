@@ -1,7 +1,10 @@
 package high.state;
 
 /**
- * State interface representing different states of the context class
+ * State interface extended by different states of the context class
+ * The methods of the State interface represent the events (or triggers) that the context can receive.
+ * Their implementations perform actions and may cause transitions to other states.
+ * <p>
  * IDLE --insert coin --> HAS_MONEY --select product --> DISPENSE -- dispense product --> IDLE
  */
 public interface State {

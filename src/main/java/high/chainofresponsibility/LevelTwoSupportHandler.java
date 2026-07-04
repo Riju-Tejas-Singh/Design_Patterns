@@ -1,6 +1,10 @@
 package high.chainofresponsibility;
 
 public class LevelTwoSupportHandler extends SupportHandler {
+
+    public LevelTwoSupportHandler (SupportHandler nextHandler) {
+        super(nextHandler);
+    }
     @Override
     boolean canHandle(Request request) {
         return request.getType().equals("LEVEL2");

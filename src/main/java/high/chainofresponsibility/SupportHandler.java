@@ -7,7 +7,7 @@ package high.chainofresponsibility;
 public abstract class SupportHandler {
     protected SupportHandler nextHandler;
 
-    public void setNextHandler(SupportHandler nextHandler) {
+    public SupportHandler (SupportHandler nextHandler) {
         this.nextHandler = nextHandler;
     }
 

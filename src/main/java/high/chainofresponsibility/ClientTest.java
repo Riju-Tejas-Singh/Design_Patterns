@@ -2,12 +2,13 @@ package high.chainofresponsibility;
 
 public class ClientTest {
     public static void main(String[] args) {
-        SupportHandler level1 = new LevelOneSupportHandler();
-        SupportHandler level2 = new LevelTwoSupportHandler();
-        SupportHandler level3 = new LevelThreeSupportHandler();
-
-        level1.setNextHandler(level2);
-        level2.setNextHandler(level3);
+        SupportHandler level1 = new LevelOneSupportHandler(new LevelTwoSupportHandler(new LevelThreeSupportHandler(null)));
+    /*
+            SupportHandler level2 = new LevelTwoSupportHandler();
+            SupportHandler level3 = new LevelThreeSupportHandler();
+            level1.setNextHandler(level2);
+            level2.setNextHandler(level3);
+    */
 
         Request req1 = new Request("LEVEL1", "Simple issue");
         Request req2 = new Request("LEVEL2", "Complex issue");
