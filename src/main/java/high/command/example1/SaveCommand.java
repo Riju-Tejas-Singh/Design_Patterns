@@ -1,4 +1,4 @@
-package high.command;
+package high.command.example1;
 
 public class SaveCommand implements Command {
     private Document document;

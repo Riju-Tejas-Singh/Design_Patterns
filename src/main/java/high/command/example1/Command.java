@@ -1,4 +1,4 @@
-package high.command;
+package high.command.example1;
 
 /**
  * Command interface : stores all commands to be invoked by invoker and received by receiver

@@ -1,4 +1,4 @@
-package high.command;
+package high.command.example1;
 
 /**
  * Command Receiver Class : receives commands via the command invoker (remote)

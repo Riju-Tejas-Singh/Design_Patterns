@@ -5,7 +5,7 @@ package high.chainofresponsibility;
  * Another example : <a href="https://gitlab.com/shrayansh8/interviewcodingpractise/-/tree/main/src/main/java/com/conceptandcoding/LowLevelDesign/DesignPatterns/LLDChainResponsibilityDesignPattern?ref_type=heads">...</a>
  */
 public abstract class SupportHandler {
-    protected SupportHandler nextHandler;
+    private final SupportHandler nextHandler;
 
     public SupportHandler (SupportHandler nextHandler) {
         this.nextHandler = nextHandler;
