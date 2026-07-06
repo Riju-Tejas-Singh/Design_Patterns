@@ -1,4 +1,4 @@
-package critical.factory;
+package critical.factory.simplefactory;
 
 public class VegPizza implements Pizza {
     @Override

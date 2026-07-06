@@ -1,4 +1,4 @@
-package critical.factory;
+package critical.factory.simplefactory;
 
 public class ClientTest {
     public static void main(String[] args) {

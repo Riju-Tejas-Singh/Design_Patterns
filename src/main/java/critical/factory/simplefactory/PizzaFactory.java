@@ -1,4 +1,4 @@
-package critical.factory;
+package critical.factory.simplefactory;
 
 public class PizzaFactory {
     public static Pizza createPizza(String type) {

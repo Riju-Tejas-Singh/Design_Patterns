@@ -1,4 +1,4 @@
-package critical.factory;
+package critical.factory.simplefactory;
 
 public interface Pizza {
     void prepare();
