@@ -1,19 +1,5 @@
 # Common Interview Concepts
 
-## Push vs Pull (Observer Pattern)
-
-| Push | Pull |
-|------|------|
-| Subject sends data to observers | Observer fetches data from subject |
-| Simpler observers | More flexible observers |
-| May send unnecessary data | Fetches only required data |
-
-**Memory:**
-- **Push** → Subject **pushes** data.
-- **Pull** → Observer **pulls** data.
-
----
-
 ## Strategy vs State
 
 | Strategy | State |
@@ -154,3 +140,123 @@ MyService proxy = (MyService) Proxy.newProxyInstance(...);
 ### Interview One-liner
 
 > **Facade simplifies interaction with a complex subsystem, whereas Adapter converts one interface into another so incompatible classes can work together.**
+
+## Push vs Pull (Observer Pattern)
+
+| Push | Pull |
+|------|------|
+| Subject sends data to observers | Observer fetches data from subject |
+| Simpler observers | More flexible observers |
+| May send unnecessary data | Fetches only required data |
+
+**Memory:**
+- **Push** → Subject **pushes** data.
+- **Pull** → Observer **pulls** data.
+
+---
+
+## Factory Method vs Abstract Factory
+
+| **Factory Method** | **Abstract Factory** |
+|--------------------|----------------------|
+| Creates **one product**. | Creates a **family of related products**. |
+| Has one factory method. | Has multiple factory methods. |
+| Uses inheritance (subclasses decide what to create). | Uses composition (client works with a factory object). |
+| Focuses on creating a single object. | Focuses on creating compatible groups of objects. |
+| Easier to add new products. | Easier to add new product families. |
+| Example: `PizzaFactory → VegPizza` | Example: `WindowsFactory → WindowsButton + WindowsCheckbox` |
+
+### Memory Trick
+
+```text
+Factory Method
+One Factory → One Product
+
+Abstract Factory
+One Factory → Multiple Related Products (Family)
+```
+
+### Interview One-liner
+
+> **Factory Method lets subclasses decide which single product to instantiate, whereas Abstract Factory provides an interface for creating families of related products without specifying their concrete classes.**
+---
+
+## Top 10 Most Asked Design Pattern Questions (Non-Comparison)
+
+### 1. Why Builder over Constructors?
+
+- Too many constructor parameters reduce readability.
+- Avoids telescoping constructors.
+- Supports optional parameters.
+- Produces immutable objects.
+
+---
+
+### 2. How do you make Singleton thread-safe?
+
+- Synchronized method
+- Double-Checked Locking
+- Bill Pugh Singleton
+- Enum Singleton
+
+---
+
+### 3. How can Singleton be broken?
+
+- Reflection
+- Serialization
+- Cloning
+
+---
+
+### 4. Why does Prototype use `clone()` instead of `new()`?
+
+- Avoids expensive object creation.
+- Preserves existing object state.
+- Constructor is not invoked.
+
+---
+
+### 5. What is the difference between Shallow Copy and Deep Copy?
+
+- Shallow Copy → Copies object references.
+- Deep Copy → Recursively copies referenced objects.
+
+---
+
+### 6. Why does Strategy use Composition?
+
+- Behavior can change at runtime.
+- Follows Composition over Inheritance.
+- Promotes loose coupling.
+
+---
+
+### 7. Why is `templateMethod()` usually `final`?
+
+- Prevents subclasses from changing the algorithm.
+- Allows subclasses to customize only specific steps.
+
+---
+
+### 8. How does Command support Undo/Redo?
+
+- Store executed commands.
+- Implement an `undo()` method.
+- Replay or reverse previously executed commands.
+
+---
+
+### 9. What problem does Chain of Responsibility solve?
+
+- Removes large `if-else` or `switch` chains.
+- Decouples sender from receiver.
+- Passes request until a suitable handler is found.
+
+---
+
+### 10. What problem does Facade solve?
+
+- Simplifies interaction with a complex subsystem.
+- Provides a single entry point.
+- Reduces coupling between client and subsystem.
