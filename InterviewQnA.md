@@ -123,17 +123,10 @@ MyService proxy = (MyService) Proxy.newProxyInstance(...);
 ### Common Uses
 
 **Static Proxy**
-- Lazy loading
-- Access control
-- Caching
-- Logging
+- Lazy loading, Access control, Caching, Logging
 
 **Dynamic Proxy**
-- Spring AOP
-- `@Transactional`
-- Security
-- Logging
-- Method interception
+- Spring AOP, `@Transactional`, Security, Logging
 
 ### Interview One-liner
 
@@ -166,11 +159,6 @@ Dynamic Proxy → JVM writes the proxy.
 
 - **Facade = Simplify**
 - **Adapter = Convert**
-
-### Intent
-
-- **Facade:** "Here's one simple interface to use this complex system."
-- **Adapter:** "Your interface doesn't match mine; I'll translate between them."
 
 ### Interview One-liner
 
