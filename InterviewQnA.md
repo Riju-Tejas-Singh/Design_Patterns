@@ -62,3 +62,116 @@
 - **Constructor** → *Create simple objects in one shot.*
 
 > **Why Builder?** It improves **readability**, **maintainability**, and **flexibility**, especially when an object has many optional parameters.
+---
+## Proxy vs Decorator
+
+| **Decorator** | **Proxy** |
+|---------------|-----------|
+| Adds new functionality to an object. | Controls access to an object. |
+| Enhances behavior. | Protects, delays, caches, logs, or secures access. |
+| Client usually wants the extra behavior. | Client is often unaware it's talking to a proxy. |
+| Example: `MilkDecorator`, `SugarDecorator` for Coffee. | Example: `ProxyImage` lazily loads `RealImage`. |
+
+### Memory Trick
+
+- **Decorator = Enhance**
+- **Proxy = Control**
+
+### Same UML, Different Intent
+
+Both use **composition**:
+
+```text
+Wrapper
+   │
+   ▼
+Real Object
+```
+
+- **Decorator:** Adds behavior before/after delegating to the real object.
+- **Proxy:** Decides whether/how the real object should be accessed.
+
+### Interview One-liner
+
+> **Decorator extends an object's behavior, whereas Proxy controls access to an object without changing its core behavior.**
+---
+## Static Proxy vs Dynamic Proxy
+
+| **Static Proxy** | **Dynamic Proxy** |
+|------------------|-------------------|
+| Proxy class is written manually. | Proxy class is generated at runtime. |
+| One proxy class per interface/object. | One proxy implementation can work for many interfaces. |
+| More boilerplate code. | Less boilerplate, more flexible. |
+| Compile-time implementation. | Runtime implementation using reflection. |
+
+### Static Proxy
+
+You write the proxy yourself.
+
+```java
+Image image = new ProxyImage(new RealImage());
+```
+
+### Dynamic Proxy
+
+The JVM generates the proxy.
+
+```java
+MyService proxy = (MyService) Proxy.newProxyInstance(...);
+```
+
+### Common Uses
+
+**Static Proxy**
+- Lazy loading
+- Access control
+- Caching
+- Logging
+
+**Dynamic Proxy**
+- Spring AOP
+- `@Transactional`
+- Security
+- Logging
+- Method interception
+
+### Interview One-liner
+
+> **Static Proxy is manually coded for a specific interface, whereas Dynamic Proxy is generated at runtime using reflection, allowing one proxy implementation to intercept calls for multiple interfaces.**
+
+### Java Interview Note
+
+- **JDK Dynamic Proxy** → Works only with **interfaces**.
+- **CGLIB Proxy** → Creates proxies by subclassing **concrete classes** (used by Spring when no interface exists).
+
+### Memory Trick
+
+```text
+Static Proxy  → You write the proxy.
+
+Dynamic Proxy → JVM writes the proxy.
+```
+---
+## Facade vs Adapter
+
+| **Facade** | **Adapter** |
+|------------|-------------|
+| Simplifies a complex subsystem. | Makes incompatible interfaces work together. |
+| Provides a new, simpler interface. | Converts one interface into another. |
+| Client uses the Facade instead of interacting with many subsystem classes. | Client continues using the expected interface without knowing about the adaptee. |
+| Focuses on **simplifying usage**. | Focuses on **compatibility**. |
+| Usually wraps **multiple** classes. | Usually wraps **one** class. |
+
+### Memory Trick
+
+- **Facade = Simplify**
+- **Adapter = Convert**
+
+### Intent
+
+- **Facade:** "Here's one simple interface to use this complex system."
+- **Adapter:** "Your interface doesn't match mine; I'll translate between them."
+
+### Interview One-liner
+
+> **Facade simplifies interaction with a complex subsystem, whereas Adapter converts one interface into another so incompatible classes can work together.**

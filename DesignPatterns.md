@@ -1,16 +1,28 @@
-**Design Patterns Classification**
+Design Patterns Classification
 
-**Creational Patterns**
-- Factory, Singleton, Builder
-- Abstract Factory
+Creational Patterns
+**- Builder**
+**- Factory**
+**- Singleton**
+
+_- Abstract Factory_
+
 - Prototype
 
-**Structural Patterns**
-- Decorator, Adapter, Proxy
-- 
+Structural Patterns
+**- Adapter**
+**- Decorator**
+**- Proxy**
+
 - Facade
 
-**Behavioral Patterns**
-- Observer, Strategy, Template
-- State, Command, Chain of Responsibility
+Behavioral Patterns
+**- Observer**
+**- Strategy**
+**- Template**
+
+_- Chain of Responsibility_
+_- Command_
+_- State_
+
 - Mediator
