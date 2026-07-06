@@ -77,4 +77,58 @@
 
 ---
 
+#### Adapter
 
+```text
+                         Client
+                            │
+                            ▼
+                       Target
+                   <<interface>>
+                 +------------------+
+                 | + request()      |
+                 +------------------+
+                          ▲
+                          │
+                    +-------------+
+                    |   Adapter   |
+                    +-------------+
+                    | - adaptee   |
+                    +-------------+
+                    | + request() |
+                    +-------------+
+                          │
+                          │ delegates
+                          ▼
+                     Adaptee
+                 +------------------+
+                 | + specificRequest() |
+                 +------------------+
+```
+
+---
+
+#### Decorator
+
+```text
+                        Component
+                     <<interface>>
+                  +------------------+
+                  | + operation()    |
+                  +------------------+
+                           ▲
+                  ┌────────┴────────┐
+                  │                 │
+        ConcreteComponent      Decorator
+                               <<abstract>>
+                         +----------------------+
+                         | - component          |
+                         +----------------------+
+                         | + operation()        |
+                         +----------------------+
+                                   ▲
+                                   │
+                     ┌─────────────┴─────────────┐
+                     │                           │
+            ConcreteDecoratorA        ConcreteDecoratorB
+```
