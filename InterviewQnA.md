@@ -136,20 +136,11 @@ MyService proxy = (MyService) Proxy.newProxyInstance(...);
 
 - **JDK Dynamic Proxy** → Works only with **interfaces**.
 - **CGLIB Proxy** → Creates proxies by subclassing **concrete classes** (used by Spring when no interface exists).
-
-### Memory Trick
-
-```text
-Static Proxy  → You write the proxy.
-
-Dynamic Proxy → JVM writes the proxy.
-```
 ---
 ## Facade vs Adapter
 
 | **Facade** | **Adapter** |
 |------------|-------------|
-| Simplifies a complex subsystem. | Makes incompatible interfaces work together. |
 | Provides a new, simpler interface. | Converts one interface into another. |
 | Client uses the Facade instead of interacting with many subsystem classes. | Client continues using the expected interface without knowing about the adaptee. |
 | Focuses on **simplifying usage**. | Focuses on **compatibility**. |

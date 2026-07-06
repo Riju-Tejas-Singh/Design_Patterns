@@ -1,7 +1,7 @@
 Design Patterns Classification
 
 Creational Patterns
-- Builder, Factory, Singleton
+- Factory Method, Singleton, Builder
 - Abstract Factory
 - Prototype
 
@@ -11,6 +11,6 @@ Structural Patterns
 - Facade
 
 Behavioral Patterns
-- Observer, Strategy, Template
+- Strategy, Observer, Template Method
 - State, Command, Chain of Responsibility
 - Mediator
