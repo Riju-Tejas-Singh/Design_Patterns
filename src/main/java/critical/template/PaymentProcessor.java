@@ -2,12 +2,12 @@ package critical.template;
 
 abstract class PaymentProcessor {
 
+    /**
+     * Template Method, hence the name of this pattern
+     */
     public final void processPayment() {
-
         validate();
-
         makePayment();
-
         sendReceipt();
     }
 
