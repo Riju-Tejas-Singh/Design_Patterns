@@ -1,7 +1,7 @@
 package low.iterator;
 
 /**
- * Iterator interface used to traverse data (SRP)
+ * Iterator used to traverse aggregate data (SRP) without exposing its internal structure
  */
 public interface Iterator<T> {
     boolean hasNext();
