@@ -265,21 +265,22 @@ One Factory → Multiple Related Products (Family)
 
 ## Design Patterns and Associated SOLID Principles
 
-| Design Pattern | Primary SOLID Principle(s) | Why? |
-|----------------|----------------------------|------|
-| Singleton | SRP | Only responsible for managing a single instance. |
-| Factory Method | **OCP**, DIP | Add new products without modifying existing code; client depends on abstractions. |
-| Abstract Factory | **OCP**, DIP | Add new product families without modifying client; depends on abstract factories/products. |
-| Builder | SRP | Separates object construction from the object itself. |
-| Adapter | **DIP**, OCP | Client depends on Target abstraction; new adapters can be added easily. |
-| Decorator | **OCP** | Add new behavior without modifying existing classes. |
-| Proxy | OCP | Add access control/caching/logging without modifying the real object. |
-| Strategy | **OCP**, DIP | Add new algorithms without modifying Context; Context depends on Strategy abstraction. |
-| Observer | OCP, DIP | New observers can be added without changing Subject; depends on Observer abstraction. |
-| Template Method | OCP | Extend behavior by overriding steps, without changing algorithm skeleton. |
-| State | OCP, DIP | Add new states without modifying Context; Context depends on State abstraction. |
-| Command | **OCP**, DIP | Add new commands without changing Invoker; Invoker depends on Command abstraction. |
-| Chain of Responsibility | OCP | Add new handlers without modifying existing ones. |
-| Mediator | SRP, DIP | Centralizes communication and decouples colleagues through an abstraction. |
-| Prototype | OCP | New prototypes can be introduced without changing client code. |
-| Facade | SRP | Provides one simplified interface to a subsystem. |
+| Design Pattern | Primary SOLID Principle(s) | Why?                                                                                                    |
+|----------------|----------------------------|---------------------------------------------------------------------------------------------------------|
+| Singleton | SRP | Only responsible for managing a single instance.                                                        |
+| Factory Method | **OCP**, DIP | Add new products without modifying existing code; client depends on abstractions.                       |
+| Abstract Factory | **OCP**, DIP | Add new product families without modifying client; depends on abstract factories/products.              |
+| Builder | SRP | Separates object construction from the object itself.                                                   |
+| Adapter | **DIP**, OCP | Client depends on Target abstraction; new adapters can be added easily.                                 |
+| Decorator | **OCP** | Add new behavior without modifying existing classes.                                                    |
+| Proxy | OCP | Add access control/caching/logging without modifying the real object.                                   |
+| Strategy | **OCP**, DIP | Add new algorithms without modifying Context; Context depends on Strategy abstraction.                  |
+| Observer | OCP, DIP | New observers can be added without changing Subject; depends on Observer abstraction.                   |
+| Template Method | OCP | Extend behavior by overriding steps, without changing algorithm skeleton.                               |
+| State | OCP, DIP | Add new states without modifying Context; Context depends on State abstraction.                         |
+| Command | **OCP**, DIP | Add new commands without changing Invoker; Invoker depends on Command abstraction.                      |
+| Chain of Responsibility | OCP | Add new handlers without modifying existing ones.                                                       |
+| Iterator | **SRP**, OCP | Separates traversal logic from collection; Add new iterators without modifying collection. |
+| Mediator | SRP, DIP | Centralizes communication and decouples colleagues through an abstraction.                              |
+| Prototype | OCP | New prototypes can be introduced without changing client code.                                          |
+| Facade | SRP | Provides one simplified interface to a subsystem.                                                       |

@@ -13,4 +13,4 @@ Structural Patterns
 Behavioral Patterns
 - Strategy, Observer, Template Method
 - State, Command, Chain of Responsibility
-- Mediator
+- Mediator, Iterator
